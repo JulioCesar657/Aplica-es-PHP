@@ -1,4 +1,9 @@
 $(document).ready(function() {
 
-    $('#conteudo').load('src/disciplinas/visão/list-disciplinas.html')
+    $('#add-disciplina').click(function(e) {
+        e.preventDefault()
+        $('#conteudo').empty()
+        $('#conteudo').load('src/disciplinas/visão/adiciona-disciplinas.html')
+    })
+
 })
