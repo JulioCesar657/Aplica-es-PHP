@@ -1,6 +1,7 @@
-<?php
+
+ <?php
     //Conectar ao banco de dados
-    include('../../conexao/conn.php');
+     include('../../conexao/conn.php');
 
     $disciplina = $_REQUEST['disciplina'];
     $professor = $_REQUEST['professor'];
@@ -8,7 +9,6 @@
     if($disciplina == ""){
         echo "Preencha o campo disciplina";
     }else{
-        echo $disciplina ."<br> ". $professor;
         //Gerar script SQL para cadastro das informações no banco de dados
         $sql = "INSERT INTO disciplinas (disciplina, professor) VALUES ('".$disciplina."', '".$professor."')";
         // Testar o comando SQL no banco de dados
@@ -18,5 +18,3 @@
             echo "Falha no cadastro!";
         }
     }
-
-    
