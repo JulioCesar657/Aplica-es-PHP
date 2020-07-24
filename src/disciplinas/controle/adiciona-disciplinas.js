@@ -15,8 +15,8 @@ $(document).ready(function() {
             success: function(dados) {
                 //Demonstrar se deu certo ou não
                 $('#adiciona-disciplinas').after(`
-                <div class="alert ${dados[0].type} alert-dismissible fade show" role="alert">
-                    <strong>${dados[0].mensagem}</strong> Olha esse alerta animado, como é chique!
+                <div class="alert ${dados.tipo} alert-dismissible fade show" role="alert">
+                    <strong>${dados.mensagem}</strong>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>

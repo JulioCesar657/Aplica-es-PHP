@@ -14,12 +14,12 @@
         // Testar o comando SQL no banco de dados
         if(mysqli_query($conecta, $sql)){
             $dados = array(
-                'type' => 'alert-success',
+                'tipo' => 'alert-success',
                 'mensagem' => 'Dados cadastrados com sucesso!'
             );
         }else{
             $dados = array(
-                'type' => 'alert-danger',
+                'tipo' => 'alert-danger',
                 'mensagem' => 'Houve um erro no cadastro!'
             );
         }
