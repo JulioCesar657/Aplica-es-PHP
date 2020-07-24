@@ -13,8 +13,16 @@
         $sql = "INSERT INTO disciplinas (disciplina, professor) VALUES ('".$disciplina."', '".$professor."')";
         // Testar o comando SQL no banco de dados
         if(mysqli_query($conecta, $sql)){
-            echo "Dados cadastrados com sucesso!";
+            $dados = array(
+                'type' => 'alert-success',
+                'mensagem' => 'Dados cadastrados com sucesso!'
+            );
         }else{
-            echo "Falha no cadastro!";
+            $dados = array(
+                'type' => 'alert-danger',
+                'mensagem' => 'Houve um erro no cadastro!'
+            );
         }
     }
+
+    echo json_encode($dados);
