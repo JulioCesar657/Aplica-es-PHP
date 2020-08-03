@@ -22,6 +22,9 @@ $(document).ready(function() {
                     </button>
                 </div>
                 `)
+                    //Limpando os campos do form
+                $('#disciplina').val('')
+                $('#professor').val('')
             }
         })
     })
