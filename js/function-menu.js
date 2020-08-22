@@ -5,6 +5,8 @@ $(document).ready(function() {
         $('#conteudo').empty()
         $('#conteudo').load('src/disciplinas/visão/adiciona-disciplinas.html')
     })
+
+
     $('#list').click(function(e) {
         e.preventDefault()
         $('#conteudo').empty()
