@@ -15,7 +15,7 @@
         if(mysqli_query($conecta, $sql)){
             $dados = array(
                 'tipo' => 'alert-success',
-                'mensagem' => 'Dados cadastrados com sucesso!'
+                'mensagem' => 'Dados salvos com sucesso!'
             );
         }else{
             $dados = array(
