@@ -3,6 +3,7 @@ function closeForm() {
         e.preventDefault()
         $('#form').empty()
         $('#form').hide()
+        $('.row').show()
     })
 }
 
@@ -26,6 +27,7 @@ $(document).ready(function() {
             success: function(dados) {
 
                 $('#form').show()
+                $('.row').hide()
 
                 // Carregando nosso formulário dentro da DIV que deixamos em branco para mostrar os dados
                 $('#form').load('src/disciplinas/visão/adiciona-disciplinas.html', function() {
