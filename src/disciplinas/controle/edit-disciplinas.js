@@ -31,8 +31,8 @@ $(document).ready(function() {
             url: 'src/disciplinas/modelo/view-disciplinas.php',
             success: function(dados) {
 
-                $('#form').show()
-                $('.row').hide()
+                $('#form').show(500)
+                $('.row').hide(500)
 
                 // Carregando nosso formulário dentro da DIV que deixamos em branco para mostrar os dados
                 $('#form').load('src/disciplinas/visão/adiciona-disciplinas.html', function() {
