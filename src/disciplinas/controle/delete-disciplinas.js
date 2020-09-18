@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
-
-    // Monitorar o clique em cima dos botões com a classe btn-view
-    $('.btn-delete').on('click', function(e) {
+    // Monitorar o clique em cima dos botões com a classe btn-delete
+    $('.btn-deletar').on('click', function(e) {
         e.preventDefault()
 
         // Criando uma variável para coletar o ID do botão clicado
         // Desenvolvo uma hash e juntamente com ela eu coleto o id do botão clicado com a função this
         var dados = `id=${$(this).attr('id')}`
+        console.log(dados)
 
         $.ajax({
             type: 'POST',
@@ -28,7 +28,7 @@ $(document).ready(function() {
                 `)
 
                 $('tbody').empty()
-                 $('body').append('<script src="src/disciplinas/controle/list-disciplinas.js"></script>')
+                $('body').append('<script src="src/disciplinas/controle/list-disciplinas.js"></script>')
 
 
                 

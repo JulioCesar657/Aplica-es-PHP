@@ -16,7 +16,7 @@ $(document).ready(function() {
                         <td class="text-center">
                             <button id="${dados[i].id}" class="btn btn-info btn-view btn-sm"><i class="mdi mdi-eye"></i></button>
                             <button id="${dados[i].id}" class="btn btn-primary btn-edit btn-sm"><i class="mdi mdi-pencil"></i></button>
-                            <button id="${dados[i].id}" class="btn btn-danger btn-delete btn-sm"><i class="mdi mdi-trash-can"></i></button>
+                            <button id="${dados[i].id}" class="btn btn-danger btn-deletar btn-sm"><i class="mdi mdi-trash-can"></i></button>
                         </td>
                     </tr>
                 `
