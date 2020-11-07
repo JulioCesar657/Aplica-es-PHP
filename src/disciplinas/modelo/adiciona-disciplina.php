@@ -6,7 +6,8 @@
     $disciplina = $_REQUEST['disciplina'];
     $professor = $_REQUEST['professor'];
     $nota = $_REQUEST['nota'];
-    // $id_alunos = $_REQUEST['$id_alunos']; Somente após o login
+    session_start();
+    $id_alunos = $_SESSION['id'];
 
     if($disciplina == ""){
         echo "Preencha o campo disciplina";

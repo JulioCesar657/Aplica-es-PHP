@@ -14,42 +14,42 @@
         <h1 class="display-4 text-center text-white">Sistema de controle de disciplinas.</h1>
         <p class="lead text-center text-white">Sistema para gerenciar as disciplinas que possuo na escola!</p>
         <p class="lead text-center text-white">
-            <a href="index.html" class="text-white">Ir para a home <i class="mdi mdi-home "></i></a>
+            <a href="painel.html" class="text-white">Ir para a home <i class="mdi mdi-home "></i></a>
         </p>
     </div>
     <div id="conteudo" class="container">
         <div class="row">
-            <div class="col-6 col-md-2">
-                <button id="add-alunos" class="btn btn-primary btn-block">
+            <div class="col-6 col-md-2 alunos">
+                <a href="src/alunos/visao/adiciona-alunos.html" class="btn btn-primary btn-block">
                     <h1>
                         <i class="mdi mdi-plus-circle mdi-48px"></i>
                     </h1>
                     <p>Adicionar alunos</p>
-                </button>
+                </a>
             </div>
-            <div class="col-6 col-md-2">
-                <button id="list-alunos" class="btn btn-primary btn-block">
+            <div class="col-6 col-md-2 alunos">
+                <a href="src/alunos/visao/list-alunos.html" class="btn btn-primary btn-block">
                     <h1>
                         <i class="mdi mdi-view-list-outline mdi-48px"></i>
                     </h1>
                     <p>Listar Alunos</p>
-                </button>
+                </a>
             </div>
             <div class="col-6 col-md-2">
-                <button id="add-disciplina" class="btn btn-primary btn-block">
+                <a href="src/disciplinas/visão/adiciona-disciplinas.html" class="btn btn-primary btn-block">
                     <h1>
                         <i class="mdi mdi-plus-circle mdi-48px"></i>
                     </h1>
                     <p>Adicionar disciplinas</p>
-                </button>
+                </a>
             </div>
             <div class="col-6 col-md-2">
-                <button id="list" class="btn btn-primary btn-block">
+                <a href="src/disciplinas/visão/list-disciplinas.html" class="btn btn-primary btn-block">
                     <h1>
                         <i class="mdi mdi-view-list-outline mdi-48px"></i>
                     </h1>
                     <p>Listar disciplinas</p>
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -63,6 +63,7 @@
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/function-menu.js"></script>
+    <script src="src/alunos/controle/verifica-tipo.js"></script>
 </body>
 
 </html>
